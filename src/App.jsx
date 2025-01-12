@@ -4,6 +4,7 @@ import { useState } from "react";
 function App({ userName, name, initialIsFollowing }) {
   const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
   const text = isFollowing ? "Siguiendo" : "Seguir";
+  const style = isFollowing ? "card-button is-following" : "card-button";
 
   const handleClick = () => {
     setIsFollowing(!isFollowing);
@@ -23,8 +24,9 @@ function App({ userName, name, initialIsFollowing }) {
         </section>
       </header>
       <aside className="card-actions">
-        <button className="card-button" onClick={handleClick}>
-          {text}
+        <button className={style} onClick={handleClick}>
+          <span className="card-button-text">{text}</span>
+          <span className="card-button-text2">Dejar de seguir</span>
         </button>
       </aside>
     </article>

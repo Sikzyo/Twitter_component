@@ -47,12 +47,37 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
+  width: 140px;
+}
+
+.is-following {
+  background-color: rgba(255, 0, 0, 0.044);
+  color: #ffffffb8;
+  border: 1px solid #ff0000;
+}
+
+.is-following:hover {
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .card-button:hover {
-  background-color: hsla(0, 0%, 100%, 0.8);
+  opacity: 0.8;
 }
 
-.card-button:active {
-  background-color: hsla(0, 0%, 100%, 0.6);
+.card-button-text2 {
+  display: none;
+}
+
+.is-following:hover .card-button-text {
+  display: none;
+}
+
+.is-following:hover .card-button-text2 {
+  display: block;
 }
