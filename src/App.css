@@ -51,17 +51,17 @@
 }
 
 .is-following {
-  background-color: rgba(255, 0, 0, 0.044);
-  color: #ffffffb8;
-  border: 1px solid #ff0000;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .is-following:hover {
-  background-color: red;
-  color: #fff;
+  background-color: rgba(255, 0, 0, 0.044);
+  color: red;
   font-size: 14px;
   font-weight: bold;
-  border: none;
+  border: 1px solid #ff0000;
   border-radius: 20px;
   cursor: pointer;
 }
